@@ -40,6 +40,6 @@ def move_piece(board, piece):
     move = "X"
 
     # Game timer, can be changed for testing
-    time.sleep(1)
+    time.sleep(0.5)
 
     return move

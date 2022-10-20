@@ -37,7 +37,16 @@ def move_piece(board, piece):
      - ' ' for neutral.
     """
 
-    move = "X"
+    ### EXAMPLE ###
+    if piece.name == "L" and piece.rotation != 3:
+        move = "X"
+    elif piece.name == "J" and piece.rotation != 1:
+        move = "X"
+    elif board.tiles[19][0] != " ":
+        move = "R"
+    else:
+        move = "L"
+    ### EXAMPLE ###
 
     # Game timer, can be changed for testing
     time.sleep(0.5)

@@ -87,6 +87,7 @@ class Board:
                     x,y = self.piece.shape[i]
                     self.board[y-1][x] = self.piece.c
                 self.piece = Piece()
+                self.score += 20
 
                 in_a_row = 0
                 y = 0
@@ -109,7 +110,7 @@ class Board:
                     x,y = self.piece.shape[i]
                     if self.board[y][x] != " ":
                         print("-"*23)
-                        print("Score: ")
+                        print(f"Score: {self.score}")
                         alive = False
                         break
 

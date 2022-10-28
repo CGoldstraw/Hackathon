@@ -87,7 +87,7 @@ class Board:
                     x,y = self.piece.shape[i]
                     self.board[y-1][x] = self.piece.c
                 self.piece = Piece()
-                self.score += 20
+                self.score += 5
 
                 in_a_row = 0
                 y = 0
